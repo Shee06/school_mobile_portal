@@ -1,9 +1,13 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import Dashboardstudent from '../../components/Dashboardstudent';
 
 function Gradestudent() {
   return (
-    <Table striped bordered hover>
+    <>
+    <Dashboardstudent/>
+    <div style={{padding: '40px' ,paddingTop: '70px'}}></div>
+    <Table striped bordered hover >
     <tbody>
     <tr>
         <th scope="col"></th>
@@ -64,6 +68,7 @@ function Gradestudent() {
       </tr>
     </tbody>
 </Table>
+</>
   )
 }
 

@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import MIL from '../images/media1.png';
-import Entrep from '../images/entrep.png';
-import PHYSICAL from '../images/physical.png';
-import PHILOSOPHY from '../images/philo.jpg';
-import SCIENCE from '../images/chemical.jpg';
-import POLITICS from '../images/politics.png';
-import RESEARCH from '../images/research.jpg';
-import LIFE from '../images/life.jpg';
-import Dashboardfaculty from './Dashboardfaculty';
+import MIL from '../../images/media1.png';
+import Entrep from '../../images/entrep.png';
+import PHYSICAL from '../../images/physical.png';
+import PHILOSOPHY from '../../images/philo.jpg';
+import SCIENCE from '../../images/chemical.jpg';
+import POLITICS from '../../images/politics.png';
+import RESEARCH from '../../images/research.jpg';
+import LIFE from '../../images/life.jpg';
+import Dashboardfaculty from '../../components/Dashboardfaculty';
 
 function Gradefaculty() {
   return (

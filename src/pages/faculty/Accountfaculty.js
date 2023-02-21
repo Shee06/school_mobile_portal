@@ -1,8 +1,12 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
+import Dashboardfaculty from '../../components/Dashboardfaculty';
 
 function AccountFaculty() {
   return (
+    <>
+    <Dashboardfaculty/>
+    <div style={{padding: '40px' ,paddingTop: '80px'}}></div>
     <Table striped bordered hover style={{textAlign: 'justify'}}>
     <thead>
     <h2>Dela Cruz, Juan A.</h2>
@@ -30,6 +34,7 @@ function AccountFaculty() {
       </tr>
     </tbody>
   </Table>
+  </>
   )
 }
 

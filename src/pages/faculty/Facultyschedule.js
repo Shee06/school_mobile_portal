@@ -1,8 +1,12 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
+import Dashboardfaculty from '../../components/Dashboardfaculty';
 
 function Facultyschedule() {
   return (
+    <>
+    <Dashboardfaculty/>
+    <div style={{padding: '40px' ,paddingTop: '70px'}}></div>
     <Table striped bordered hover style={{textAlign:'center'}}>
             <tbody>
             <tr>
@@ -107,6 +111,7 @@ function Facultyschedule() {
               </tr>
             </tbody>
     </Table>
+    </>
   )
 }
 
