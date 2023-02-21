@@ -6,8 +6,9 @@ function Table() {
 <>
 <Dashboardfaculty/>
 <div style={{padding: '40px' ,paddingTop: '70px'}}></div>
-    <form>
-        <table border="1" style={{margin:'0 300px', width:'auto'}}>
+<div style={{display:'flex', justify:'center'}}>
+    <form style={{margin:'0 auto'}}>
+        <table border="1" >
             <tr>
                 <td>
                     <p>
@@ -124,6 +125,7 @@ function Table() {
                 </tr>
         </table>
     </form>
+    </div>
     </>
   )
 }
