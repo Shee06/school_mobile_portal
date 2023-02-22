@@ -15,9 +15,10 @@ import Enrollmentform from './pages/student/Enrollmentform';
 import Enrolledlist from './pages/faculty/Enrolledlist';
 import Enrollmentfaculty from './pages/faculty/Enrollmentfaculty';
 import Manageenroll from './pages/faculty/Manageenroll';
+import ViewEnrollment from './pages/student/ViewEnrollment';
 import Table from './pages/faculty/Table';
-
-
+import HomeStudent from './pages/student/HomeStudent';
+import HomeFaculty from './pages/faculty/HomeFaculty';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         <Route path="/enrollmentfaculty" element={<Enrollmentfaculty/>}/>
         <Route path="/manageenroll" element={<Manageenroll/>}/>
         <Route path="/table" element={<Table/>}/>
+        <Route path="/viewenrollment" element={<ViewEnrollment/>}/>
+        <Route path="/homestudent" element={<HomeStudent/>}/>
+        <Route path="/homefaculty" element={<HomeFaculty/>}/>
         <Route path="/*" element={<h1>PAGE NOT FOUND</h1>}/>
 
       </Routes>

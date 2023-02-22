@@ -5,6 +5,7 @@ import Profile from '../images/profile.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavDropdown } from 'react-bootstrap';
 
 function Dashboardfaculty() {
   return (
@@ -15,7 +16,7 @@ function Dashboardfaculty() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <Link to = "#" style={{textDecoration: 'none'}}><Nav.Link href="#pricing">Home</Nav.Link></Link>
+            <Link to = "/HomeFaculty" style={{textDecoration: 'none'}}><Nav.Link href="#pricing">Home</Nav.Link></Link>
             <Link to = "/Enrollmentfaculty" style={{textDecoration: 'none'}}><Nav.Link href="#pricing">Enrollment</Nav.Link></Link>
             <Link to = "/Facultyschedule" style={{textDecoration: 'none'}}><Nav.Link href="#pricing">Schedule</Nav.Link></Link>
             <Link to = "/gradefaculty" style={{textDecoration: 'none'}}><Nav.Link href='gradefaculty'>Grades</Nav.Link></Link>
@@ -24,9 +25,15 @@ function Dashboardfaculty() {
 
             <Nav>
             <Nav.Link href="#deets">Announcement</Nav.Link>
-            <Nav.Link><img src={Profile} alt="Logo" width="30" height="30"/></Nav.Link>
-          </Nav>
-           
+            </Nav>
+
+            <Nav>
+        <NavDropdown title={<img src={Profile} alt="Profile" width="30" height="30"/>} id="basic-nav-dropdown">
+        <NavDropdown.Item href="action1">Profile</NavDropdown.Item>
+        <Link to = "/Facultylogin" style={{textDecoration: 'none'}}><NavDropdown.Item href="action2">Log Out</NavDropdown.Item></Link>
+        </NavDropdown>
+           </Nav>
+         
         </Navbar.Collapse>
     
       </Container>

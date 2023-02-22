@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboardstudent from '../../components/Dashboardstudent';
 function Enrollmentform() {
@@ -10,7 +11,7 @@ function Enrollmentform() {
 <div style={{backgroundColor: 'blue', marginTop: '-40px',  marginBottom: '-40px'}}></div>
 <div className='text-center'>
 <form>
-  <button type="submit" className="btn btn-primary btn-block " style={{backgroundColor: '#004aad'}}>VIEW ENROLLMENT</button>
+<Link to="/ViewEnrollment"><button type="submit" className="btn btn-block p-3" style={{backgroundColor: 'gray', color:'white'}}>VIEW ENROLLMENT</button></Link>
 </form>
 </div>
 
